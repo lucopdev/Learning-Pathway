@@ -1,2 +1,2 @@
 # Learning Pathway
- All exercises i've done until become a dev
+ All the exercises i did on the way to become a developer
