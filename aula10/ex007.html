@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+        }
+        #container{
+            
+            width:100%;
+            height:200px;
+        }
+        #res{
+            width: 300px;
+            position: relative;
+            margin-right:auto;
+            margin-left:auto;
+            color: red;
+            
+            top: 50%;
+            transform: translateY(-50%); /* com essas duas ultimas regras, é possivel fixar uma div no centro de um container */
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <input type="number" name="txtn1" id="txtn1"> <strong>+</strong>
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="container">
+        <div id="res">
+            <h1>Resultado: </h1>
+        </div>
+    </div>
+    <script>
+        function somar(){
+            var tn1 = window.document.getElementById('txtn1');
+            var tn2 = window.document.querySelector('input#txtn2');
+            var n1 = Number(tn1.value);
+            var n2 = Number(tn2.value);
+            var soma = n1 + n2;
+            res.innerHTML = (`<h1>O resultado é ${soma}<h1>`);
+        }
+    </script>
+</body>
+</html>

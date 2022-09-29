@@ -1,0 +1,36 @@
+body{
+    background-color:rgb(108, 172, 245);
+    
+}
+h1{
+    font-size:40pt;
+    text-align:center;
+    color: white;
+    text-shadow: 3px 3px 10px rgb(60,60,60);
+}
+section{
+    margin:auto;
+    text-align:center;
+    background-color:white;
+    border-radius: 15px;
+    width:400px;
+    box-shadow: 3px 3px 10px rgb(63, 61, 61);
+}
+#ano{
+    margin-top:20px;
+    width:100px;
+}
+img{
+    width:300px;
+    border-radius:300px;
+}
+#resultado{
+    padding-bottom:20px;
+
+}
+footer{
+    font-style: italic;
+    color: white;
+    text-align: center;
+    padding-top:20px;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        #container1{
+            
+            text-align:center;
+          
+        }
+        p{
+            position:relative;
+            display:inline-block;
+            vertical-align:middle;
+            
+            
+
+        }    
+        #inputdiv{
+            position:relative;
+            display:inline-block;
+            vertical-align:middle;
+            
+            
+        }
+        #boxvel{
+            vertical-align:middle;
+            height:30px;
+            width:50px;
+            font-size:15pt;
+            
+        }
+        #container2{
+            height:50px;
+            width:100%;
+            
+           
+        }
+        #ver{
+            position:relative;
+            top: 50%;
+            transform: translateY(-50%);
+            
+            
+            text-align: center;
+        }
+        
+        
+        </style>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    <div id="container1">
+        <p>Velocidade do carro</p>
+        <div id="inputdiv">
+            <input type="number" name="boxvel" id="boxvel">Km/h
+            <input type="button" value="Verificar" onclick="calcular()">
+        </div>
+    </div>
+    
+    <div id="container2">
+        <div id="ver">
+            
+        </div>
+    </div>
+
+
+    <script>
+        function calcular(){
+            var txtvel = window.document.querySelector('input#boxvel');
+            var ver = window.document.querySelector('div#ver');
+            var vel = Number(txtvel.value);    
+                if(vel >= 60){
+                    ver.innerHTML = `Você está à ${vel}km/h. <strong>MULTADO!</strong>`;
+                }else{
+                    ver.innerHTML = `Você está à ${vel}km/h.`;
+                    ver.innerHTML += ' Dirija sempre com o sinto de segurança.'
+                }
+        
+        }
+    </script>
+</body>
+</html>

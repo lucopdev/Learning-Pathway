@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de nacionalidade</title>
+    <style>
+        #container3{
+            font-size: 20pt;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="titulo">
+            <h1>Em qual país você mora?</h1>
+        </div>
+    </div>
+
+    <div id="container2">
+        <div id="inputDiv">
+            <input type="text" name="txtPais" id="txtPais"> -
+            <input type="button" value="Verificar nacionalidade" onclick="verificar()">
+        </div>
+    </div>    
+    
+    <div id="container3">
+        <div id="saida">
+
+        </div>
+    </div>
+
+    <script>
+        function verificar(){
+            var entradaPais = window.document.getElementById('txtPais');
+            var saida = window.document.getElementById('saida');
+            var tpais = String(entradaPais.value);
+            
+          
+            if (tpais === 'BRASIL'|| tpais === 'brasil'|| tpais === 'Brasil'){
+                saida.innerHTML = `Você nasceu no(a) ${tpais}, portanto é brasileiro.`;
+            }else if (tpais === 'USA'|| tpais === 'EUA'|| tpais === 'usa'|| tpais === 'eua'){
+                saida.innerHTML = `Você nasceu no(a) ${tpais}, portanto é americano.`;
+            }else if (tpais === 'INGLATERRA'|| tpais === 'inglaterra'|| tpais === 'Inglaterra'|| tpais === 'england'|| tpais === 'England'){
+                saida.innerHTML = `Você nasceu no(a) ${tpais}, portanto é inglês.`;
+            }else if (tpais === 'FRANÇA'|| tpais === 'frança'|| tpais === 'França'|| tpais === 'france'){
+                saida.innerHTML = `Você nasceu no(a) ${tpais}, portanto é francês.`;
+            }else if(tpais === 'JAPÃO' || tpais === 'japão' || tpais === 'Japão'|| tpais === 'japao'){
+                saida.innerHTML = `Você nasceu no(a) ${tpais}, portanto é japonês.`;
+            
+            
+            }else{
+                saida.innerHTML = `Você nasceu no(a) ${tpais}. `;
+                saida.innerHTML += 'Infelizmente seu pais ainda não consta na lista. Tente mais tarde'
+            }
+        }
+    </script>
+</body>
+</html>

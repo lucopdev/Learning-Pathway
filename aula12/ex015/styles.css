@@ -1,0 +1,26 @@
+body{
+    text-align:center;
+    background-color: rgb(156, 207, 214);
+}
+h1{
+    color: white;
+    font-size: 30pt;
+}
+
+#container0{
+    text-align:center;
+    color: rgb(100, 80, 84);
+}
+img{
+    
+    width:200px;
+    border-radius: 200px;
+}
+#container1{
+    padding-top:20px;
+}
+#container2{
+    font-size: 10pt;
+    color:white;
+    font-style: italic;
+}

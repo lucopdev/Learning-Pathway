@@ -1,0 +1,27 @@
+body{
+    background-color:rgb(135, 204, 250);
+}
+header{
+    color:white;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.479);
+    text-align:center;
+}
+section{
+    text-align:center;
+    background-color: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.425);
+    border-radius: 10px;
+    width:300px;
+    margin:auto;
+    padding: 20px;
+}
+p{
+    font-weight: bold;
+}
+#seletor{
+    text-align:justify;
+    width:120px;
+}
+#limp{
+    margin-left:10px;
+}

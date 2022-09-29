@@ -1,0 +1,52 @@
+body{
+    background-color:rgb(111, 185, 255);
+}
+h1{
+    color:white;
+    font-size:30pt;
+    text-align:center;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.521);
+}
+section{
+    border-radius:15px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.507);
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align:center;
+    margin:auto;
+    background-color: white;
+    width:400px;
+}
+#buttom1{
+    width: 50px;
+    text-align:center;
+}
+#ini{
+    width:150px;
+}
+#fim{
+    width:180px;
+}
+#passo{
+    width:165px;
+}
+#saida{
+    font-weight:bold;
+    padding-top:10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#limpar{
+    width:60px;
+    text-align:center;
+    font-size:10pt;
+    font-weight: bold;
+}
+#buttonContar{
+    width: 60px;
+    font-size:10pt;
+    font-weight:bold;
+}
+#limpa{
+    font-weight: bold;
+}
